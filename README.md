@@ -1,4 +1,4 @@
-A simple application to schedule medical appointments
+A simple mobile application to schedule medical appointments
 -
 
 A simple app to schedule medical appointments (including doctors, patients history, appointments availables, etc.)
