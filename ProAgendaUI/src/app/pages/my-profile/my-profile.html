@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar color ="light">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>ProAgenda</ion-title>
+    </ion-toolbar>
+    <ion-toolbar color="medium">
+        <ion-title>Hola {{profileName}} !</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+
+    <div *ngIf="appointments?.length == 0">
+    <p>Actualmente no tiene ningun turno asignado.</p>
+    <p>Primero selecciona la especialidad, luego al doctor y finalmente escoje un turno disponible.</p>
+  </div>
+    <ion-list *ngIf="appointments?.length != 0">
+      <ion-list-header> Turnos Asignados: </ion-list-header>
+
+      <ion-item *ngFor="let appointment of appointments">
+        <ion-label>
+          <h2>{{appointment.time | date:"dd-MM-yyyy - hh:mm"}}</h2>
+          <h3 *ngIf="doctor?.length != 0 && specialties?.length != 0 ">{{getDoctor(appointment.doctorId)}}</h3>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="full" color="light" (click)="goToSpecialties()" icon-left><ion-icon name="search"></ion-icon>Reserva tu turno! 
+    </ion-button>
+</ion-content>

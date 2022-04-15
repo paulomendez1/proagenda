@@ -1,0 +1,82 @@
+<ion-content>
+  <img src="../../../assets/ProAgenda.jpeg" alt="">
+
+  <ion-slide>
+  
+    <div class="contaier-login">
+    
+      <ion-grid>
+        <form novalidate (ngSubmit)="submit()" [name]="form" [formGroup]="form">
+        <ion-row>
+          <ion-col>
+            <h1>Registrarse</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+
+              <ion-item>
+                <ion-icon name="person" class="icon-login"></ion-icon>
+                <ion-input name="user" type="text" formControlName="email" placeholder="Email"></ion-input>
+              </ion-item>
+              <br />
+              <ion-item>
+                <ion-icon name="lock-closed-outline" class="icon-login"></ion-icon>
+                <ion-input name="password" type="password" formControlName="password" placeholder="Contraseña">
+                </ion-input>
+              </ion-item>
+              <br />
+              <ion-item>
+                <ion-icon name="lock" class="icon-login"></ion-icon>
+                <ion-input name="name" type="text" formControlName="name" placeholder="Nombre">
+                </ion-input>
+              </ion-item>
+              <br />
+              <ion-item>
+                <ion-icon name="lock" class="icon-login"></ion-icon>
+                <ion-input name="lastname" type="text" formControlName="lastname" placeholder="Apellido">
+                </ion-input>
+              </ion-item>
+              <br />
+              <ion-item>
+                <ion-icon name="lock" class="icon-login"></ion-icon>
+                <h5>Avatar</h5>
+                <ion-input name="avatar" type="file" #fileInput accept="image/png, image/jpeg" (change)="change($event)" formControlName="avatar" placeholder="Avatar">
+                </ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.email">
+            <div class="error-message" *ngIf="form.get('email').hasError(validation.type) && (form.get('email').dirty || form.get('email').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+          <ng-container *ngFor="let validation of validation_messages.password">
+            <div class="error-message" *ngIf="form.get('password').hasError(validation.type) && (form.get('password').dirty || form.get('password').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+          </div>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" [disabled]="!form.valid" fill="solid" expand="full" color="medium">
+              Registrarse!
+            </ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-label>
+              <h3 (click)="goBack()">Cancelar</h3>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </form>
+      </ion-grid>
+    </div>
+
+  </ion-slide>

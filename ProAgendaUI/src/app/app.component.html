@@ -1,0 +1,16 @@
+<ion-menu side="start" menuId="custom" contentId="main">
+    <ion-header>
+      <ion-toolbar color="light">
+        <ion-title style="color: white; background-color: rgb(34,36,40)">ProAgenda</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Hola {{name}}!</ion-item>
+        <ion-item>Mis datos</ion-item>
+        <ion-item><a (click)="logout()" style="color: black;">Cerrar Sesión</a></ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+<ion-router-outlet id="main"></ion-router-outlet>

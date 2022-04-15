@@ -1,0 +1,15 @@
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\bin\Debug\net5.0\ProAgendaCore.deps.json
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\bin\Debug\net5.0\ProAgendaCore.runtimeconfig.json
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\bin\Debug\net5.0\ProAgendaCore.runtimeconfig.dev.json
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\bin\Debug\net5.0\ProAgendaCore.dll
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\bin\Debug\net5.0\ref\ProAgendaCore.dll
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\bin\Debug\net5.0\ProAgendaCore.pdb
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\obj\Debug\net5.0\ProAgendaCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\obj\Debug\net5.0\ProAgendaCore.AssemblyInfoInputs.cache
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\obj\Debug\net5.0\ProAgendaCore.AssemblyInfo.cs
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\obj\Debug\net5.0\ProAgendaCore.csproj.CoreCompileInputs.cache
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\obj\Debug\net5.0\ProAgendaCore.dll
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\obj\Debug\net5.0\ref\ProAgendaCore.dll
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\obj\Debug\net5.0\ProAgendaCore.pdb
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\obj\Debug\net5.0\ProAgendaCore.genruntimeconfig.cache
+C:\Users\paulo\source\repos\ProAgenda\ProAgendaCore\obj\Debug\net5.0\ProAgendaCore.csproj.AssemblyReference.cache

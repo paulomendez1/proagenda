@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Especialidades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let specialty of specialties"><a (click)="itemTrapped($event, specialty)">{{specialty.name}}</a></ion-item>
+  </ion-list>
+</ion-content>

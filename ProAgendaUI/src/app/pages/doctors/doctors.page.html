@@ -1,0 +1,23 @@
+
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Doctores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header> Especialidad:  </ion-list-header>
+    <ion-item *ngFor="let doctor of doctors">
+      <ion-avatar slot="start">
+        <img src= {{doctor.avatar}} />
+      </ion-avatar>
+      <ion-label>
+        <h2><a (click)="itemTrapped($event, doctor)" >{{doctor.name}} {{doctor.lastName}}</a></h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

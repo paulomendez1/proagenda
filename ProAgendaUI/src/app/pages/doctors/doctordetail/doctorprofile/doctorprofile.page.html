@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Doctor:</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="doctor">
+  <ion-avatar class="ion-margin-start">
+    <img src= {{doctor.avatar}} />
+  </ion-avatar>
+  <ion-item>
+    <ion-label>
+      <h2>Nombre : {{doctor.name}}</h2>
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <h2>Apellido : {{doctor.lastName}}</h2>
+    </ion-label>
+  </ion-item>
+</ion-content>

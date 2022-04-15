@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Turnos:</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-datetime  style="width: 100%; margin-left: 5px;" color="medium" minute-values="0,15,30,45"  
+  (ionChange)="changeDate($event)"></ion-datetime>
+<br/>
+  <ion-button (click)="registerAppointment()" expand="full" color="medium" icon-left ><ion-icon name="book"></ion-icon>Agendar!
+  </ion-button>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ProAgenda",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

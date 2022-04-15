@@ -1,0 +1,66 @@
+
+<ion-content>  
+    <div class="img">
+            <img src="../../../assets/ProAgenda.jpeg" alt="">
+        </div> 
+  <div class="form">
+  <ion-slide>
+      <div class="contaier-login">
+          <ion-grid>
+            <form novalidate (ngSubmit)="submit()" [name]="form" [formGroup]="form">
+              <ion-row>
+                  <ion-col>
+                      <h1>Iniciar Sesión</h1>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-list>
+  
+                          <ion-item>
+                              <ion-icon name="person"></ion-icon>
+                              <ion-input name="user" type="text" formControlName="email" placeholder="Email"></ion-input>
+                          </ion-item>
+                          <br />
+                          <ion-item>
+                              <ion-icon name="lock-closed"></ion-icon>
+                              <ion-input name="password" type="password" formControlName="password" placeholder="Contraseña"></ion-input>
+                          </ion-item>
+  
+                      </ion-list>
+                  </ion-col>
+              </ion-row>
+              <div class="validation-errors">
+                <ng-container *ngFor="let validation of validation_messages.email">
+                  <div class="error-message" *ngIf="form.get('email').hasError(validation.type) && (form.get('email').dirty || form.get('email').touched)">
+                    {{ validation.message }}
+                  </div>
+                </ng-container>
+                <ng-container *ngFor="let validation of validation_messages.password">
+                  <div class="error-message" *ngIf="form.get('password').hasError(validation.type) && (form.get('password').dirty || form.get('password').touched)">
+                    {{ validation.message }}
+                  </div>
+                </ng-container>
+                </div>
+              <ion-row>
+                  <ion-col>
+                      <ion-button n type="submit" [disabled]="!form.valid" fill="solid" expand="full" color="medium">
+                          Entrar
+                      </ion-button>
+                      <ion-button type="submit" fill="solid" expand="full" color="light" (click)="goToSpecialties()">
+                        Registrarse
+                    </ion-button>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-label>
+                          <h3>¿Olvido la contraseña?</h3>
+                      </ion-label>
+                  </ion-col>
+              </ion-row>
+            </form>
+          </ion-grid>
+      </div>
+  </ion-slide>
+</div>
